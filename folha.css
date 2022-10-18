@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+/*---------------------------------Página Inicial---------------------------------*/
+.integrantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#foto_alu{
+    height: 100px;
+}
+
+/*---------------------------------BASE DOS SITES---------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bungee Spice', cursive;
+}
+
+/*---------------------------------Composição principal---------------------------------*/
+body{
+    background-image: url(fundo.jpg);
+    min-height: 100vh;
+    background-color: rgb(28, 27, 27);
+}
+
+header{
+    background-image: linear-gradient(to right, rgb(17, 1, 17), rgb(13, 13, 100));
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+footer{
+    background-image: linear-gradient(to right, rgb(17, 1, 17), rgb(13, 13, 100));
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.box{
+    padding: 1%;
+}
+
+
+/*Estilização dos links*/
+.links{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+#link{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#link:hover{
+    font-size: 13px;
+}
+
+/*---------------------------------Textos e imagens---------------------------------*/
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    margin-top: 4%;
+}
+
+/*Parte textual*/
+.tema{
+    width: 100%;
+    text-align: center;
+}
+
+#titulo_txt{
+    font-size: 30px;    
+    text-align: center;
+    margin-top: 1%;
+}
+
+.texto{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Imagens*/
+.imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#img{
+    height: 450px;
+}
+
+#imgI{
+    height: 400px;
+}
+
+#img_vid{
+    height: 300px;
+}
+
+.img2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#logo{
+    height: 200px;
+}
+
+/*---------------------------------FORMULÁRIOS---------------------------------*/
+.body_form{
+    background-image: linear-gradient(to right, rgb(17, 1, 17), rgb(13, 13, 100));
+}
+
+#fds1{
+    border-color: purple;
+    margin: 2%;
+}
+
+#fds2{
+    border-color: purple;
+    margin: 2%;
+}
+
+#fds3{
+    border-color: purple;
+    margin: 2%;
+}
+
+#botao{
+    background-color: blue;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+#botao:hover{
+    font-size: 17px;
+}
+
+.txtbox{
+    background-color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-radius: 15px;
+    border: none;
+}
+
+#lsdisciplina{
+    background-color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 1%;
+    border-radius: 15px;
+}
+
+.posi{
+    margin: 4px;
+}

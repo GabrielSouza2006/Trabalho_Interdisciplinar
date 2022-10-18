@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="folha.css" type="text/css">
+    <script src="codigo.js" type="text/javascript"></script>
+    
+</head>
+<body class="body_form">
+
+    <header>
+        <div class="box">
+            <h1>Página de formulário <u>APENAS</u> para a matéria:</h1>
+        </div>
+        <div class="box">
+            <h1><u>DSA1</u></h1>
+        </div>
+    </header>
+    
+    <form action="destino.html" id="form1" method="POST" onsubmit="return validar()">
+    <fieldset id="fds1">
+        <legend> Dados do Professor </legend>
+        <label for="txtnomepro" class="primeira">Nome do professor</label>
+        <input type="text" class="txtbox" id="txtnomepro" size="40" maxlength="38" class="labels" />
+
+        <label for="txtemail" class="segunda">Email do professor</label>
+        <input type="text" class="txtbox" id="txtemail" size="40" maxlength="30" class="labels" />
+        <br />
+        <label for="lsdisciplina" class="terceira">Disciplina do Professor</label>
+        <select id="lsdisciplina" class="terceira">
+            <option value="X" selected="selected">Escolher </option>
+            <option value="d1">DSA1</option>
+            <option value="lo">LOGB</option>
+            <option value="fu">FUTI</option>
+            <option value="es">ESMD</option>
+            <option value="pr">PRIT</option>
+            <option value="em">EMPR</option>
+        </select>
+
+    </fieldset>
+    
+    <fieldset id="fds2">
+        <legend> Avaliação sobre o site</legend>
+        <label class="posi">Qual sua opinião sobre a navegação entre as paginas:<br/>
+            <input type="radio" id="radmuitof" value="mf" class="posi1" name="opnp"/>
+            <label class="posi1">muito fácil</label> <br/>
+            <input type="radio" id="radfacil"  value="f"  class="posi1" name="opnp" />
+            <label class="posi1">fácil</label> <br/>
+            <input type="radio" id="radcompli" value="c"  class="posi1" name="opnp"/>
+            <label class="posi1">complicada</label> <br/>
+            <input type="radio" id="radmuitoc" value="mc" class="posi1" name="opnp" checked="checked"/>
+            <label class="posi1">muito complicada</label>
+        </label> <br/> <br/>
+
+        <label class="posi">Em relação a estética básica das páginas:<br/>
+            <input type="radio" id="radmct" value="mct" class="posi2" name="rebp"/>
+            <label class="posi2">Faltou muita coisa a ser trabalhada</label> <br/>
+            <input type="radio" id="radpst" value="pst" class="posi2" name="rebp"/>
+            <label class="posi2">poderia ser mais trabalhada</label> <br/>
+            <input type="radio" id="radft"  value="ft"  class="posi2" name="rebp"/>
+            <label class="posi2">foi trabalhada</label> <br/>
+            <input type="radio" id="radfbt" value="ftb" class="posi2" name="rebp" checked="checked"/>
+            <label class="posi2">foi bem trabalhada</label>
+        </label> <br/> <br/>
+
+        <label class="posi">Em relação a comprensão dos textos do trabalho:<br/>
+            <input type="radio" id="radmuitof2" value="mf2" class="posi3" name="rctt"/>
+            <label class="posi3">muito fácil</label> <br/>
+            <input type="radio" id="radfacil2"  value="f2"  class="posi3" name="rctt"/>
+            <label class="posi3">fácil </label> <br/>
+            <input type="radio" id="radcompli2" value="c2"  class="posi3" name="rctt"/>
+            <label class="posi3">complicada</label> <br/>
+            <input type="radio" id="radmuitoc2" value="mc2" class="posi3" name="rctt" checked="checked"/>
+            <label class="posi3">muito complicada</label>
+        </label> <br/> <br/>
+
+        <label class="posi">Em relação ao conteúdo do trabalho de forma qualitativa:<br/>
+            <input type="radio" id="radcfora"  value="cf" class="posi4" name="rctfq"/>
+            <label class="posi4">conteúdo fora do pedido pelo professor</label> <br/>
+            <input type="radio" id="radpoucos" value="ps" class="posi4" name="rctfq"/>
+            <label class="posi4">pouco suficiente </label> <br/>
+            <input type="radio" id="radsufi"   value="s"  class="posi4" name="rctfq"/>
+            <label class="posi4">suficiente</label> <br/>
+            <input type="radio" id="radmais"   value="ms" class="posi4" name="rctfq" checked="checked"/>
+            <label class="posi4">mais que sufieciente</label>
+        </label> <br/> <br/>
+            
+        <label class="posi">Em relação ao conteúdo do trabalho de forma quantitativa :<br/>
+            <input type="radio" id="radcfora2"  value="cf2" class="posi5" name="rctfq2"/>
+            <label class="posi5">conteúdo fora do pedido pelo professor</label> <br/>
+            <input type="radio" id="radpoucos2" value="ps2" class="posi5" name="rctfq2"/>
+            <label class="posi5">pouco suficiente </label> <br/>
+            <input type="radio" id="radsufi2"   value="s2"  class="posi5" name="rctfq2"/>
+            <label class="posi5">suficiente</label> <br/>
+            <input type="radio" id="radmais2"   value="ms2" class="posi5" name="rctfq2" checked="checked"/>
+            <label class="posi5">mais que sufieciente</label>
+        </label> 
+
+    </fieldset>
+
+    <fieldset id="fds3">
+        <legend> Conclusão final</legend>
+        <label for="txtnota" class="quarta">Dê uma nota de zero até sete sobre o trabalho:</label>
+        <input type="text" id="txtnota" class="txtbox" size="4" maxlength="2" class="labels" /> <br />
+
+        <label for="txtcom" class="quinta">Comentário:</label> <br />
+        <textarea id="txtcom" rows="6" cols="40" class="txtbox"></textarea>
+    </fieldset>
+    <input type="reset" value="Apagar as Informações" id="botao"/>
+    <input type="submit" value="Confirma o Cadastro" id="botao"/>
+    </form>
+
+    <footer>
+        <div class="box">
+            <a href="Index.html" id="link">Voltar para a página inicial</a>
+        </div>
+    </footer>
+</body>
+</html>
