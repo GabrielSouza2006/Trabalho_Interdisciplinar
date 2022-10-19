@@ -61,6 +61,13 @@ footer{
     font-size: 13px;
 }
 
+#linkF{
+    text-decoration: none;
+    font-size: 20px;
+}
+#linkF:hover{
+    font-size: 16px;
+}
 /*---------------------------------Textos e imagens---------------------------------*/
 .conteudo{
     display: flex;
@@ -99,7 +106,12 @@ footer{
 }
 
 #imgI{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
     height: 400px;
+    border-style: double;
+    border-color: purple;
 }
 
 #img_vid{
