@@ -133,6 +133,11 @@ footer{
     background-image: linear-gradient(to right, rgb(17, 1, 17), rgb(13, 13, 100));
 }
 
+.body_form2{
+    background-image: linear-gradient(to right, rgb(17, 1, 17), rgb(13, 13, 100));
+    text-align: center;
+}
+
 #fds1{
     border-color: purple;
     margin: 2%;
