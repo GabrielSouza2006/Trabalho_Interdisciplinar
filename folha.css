@@ -186,3 +186,8 @@ footer{
 .posi{
     margin: 4px;
 }
+
+/*imagens com tratamento especial*/
+#img_es1{
+    height: 20%;
+}

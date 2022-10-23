@@ -22,7 +22,193 @@
             </div>
         </div>
     </header>
-    
+
+    <main>
+        <div class="conteudo">
+            <h1 class="tema">Linguagem SQL de Banco de Dados
+            </h1>
+            <p id="titulo_txt">O que é a linguagem SQL e para que serve?</p>
+            <div class="texto">
+                <p>
+                    SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.<br /> Ela é uma linguagem declarativa e que não necessita de profundos conhecimentos de programação para que alguém possa começar a escrever queries (as consultas e pedidos), que trazem resultados de acordo com o que você está buscando. <br />SQL significa Standard Query Language, literalmente a linguagem padrão para realizar queries. <br /><br />
+                    A linguagem SQL é utilizada de maneira relativamente parecida entre os principais bancos de dados relacionais do mercado: Oracle, MySQL, Microsoft SQL Server, entre muitos outros. <br />Cada um tem suas características, sendo o MySQL e o PostgreSQL extremamente populares por possuírem versões gratuitas e de código aberto.<br /> É também uma linguagem que muitos profissionais acabam precisando aprender: seja quem usa Excel de forma pesada e acaba migrando as informações para um banco de dados, seja um cientista de dados que usa Python para agregar os dados das diferentes fontes de informações.<br /><br />
+
+                </p>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h1 class="tema">O que é o comando SELECT e como usar as suas opções : WHERE e ORDER BY
+            </h1>
+            <h3>- Comando SELECT</h3>
+           <div class="texto">
+                <p>
+                    O comando select recupera os dados de uma ou mais tabelas, sendo um dos comandos mais simples e, ao mesmo tempo, mais extenso da SQL devido as suas funções, operandos, comandos, sub-comandos e cláusulas não obrigatórias.
+                </p>
+           </div> 
+           <h3>Exemplo:</h3>
+           <div class="img2"> 
+                <img id="img_vid" src="Select.jpeg" alt="placas">
+                <img id="img_vid" src="Select2.jpeg" alt="placas">
+                <img id="img_vid" src="Select3.jpeg" alt="placas">
+            </div>
+            <br /><br />            
+
+
+            <h3>- Comando WHERE</h3>
+            <div class="texto">
+                <p>
+                    Podemos filtrar colunas para nos mostrar apenas os dados que nos interessa através da cláusula where em conjunto com os operadores comparativos, ou seja, permite que se especifique um dado para comparação com algo que pode estar no banco, sendo assim, um dado de entrada para selecionar nossa busca<br /><br />
+
+                    Tabela - Nome da tabela <br />
+                    Coluna - Nome de uma coluna<br />
+                    Para mostrar todas as colunas pode-se colocar apenas a máscara “*” no lugar do nome das colunas<br />
+                    Condição - Cria uma condição para filtrar os dados utilizando os operadores comparativos<br />
+                </p>
+           </div>
+           <h3>Exemplo:</h3>
+           <div class="img2"> 
+                <img id="img_es1" src="Where.jpeg" alt="placas">
+                <img id="img_vid" src="Where2.jpeg" alt="placas">
+            </div> 
+            <br /><br />
+            <div class="texto">
+                <p>
+                    Em uma instrução SQL, a cláusula WHERE especifica os critérios que os valores do campo devem cumprir para que os registros que contêm os valores sejam incluídos nos resultados da consulta.
+                </p>
+           </div>
+
+           <br /><br />
+           <h3>- Condição ORDER BY</h3>
+            <div class="texto">
+                <p>
+                    ORDER BY organiza os resultados de acordo com uma ou mais colunas da tabela, podendo definir a ordem dos resultados como crescente ou decrescente. Caso a ordem não seja declarada, será crescente (ASC), por padrão.<br /><br />
+EXEMPLOS: <br />
+Tabela - Nome da tabela<br />
+Coluna - Nome de uma coluna<br />
+Para mostrar todas as colunas pode-se colocar apenas a máscara * no lugar do nome das colunas<br />
+Condição - Cria uma condição para filtrar os dados utilizando os operadores comparativos<br />
+Coluna_Ordenada - Coluna que será ordenada<br />
+Modo_Ordenação - Modo que a coluna será ordenada<br />
+asc - Modo ascendente [Opcional]<br />
+desc - Modo descendente<br />
+
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="OrderBy.jpeg" alt="placas">
+                <img id="img_vid" src="OrderBy2.jpeg" alt="placas">
+            </div> 
+            <br /><br />
+            <div class="texto">
+                <p>
+                    Em uma instrução SQL, a cláusula WHERE especifica os critérios que os valores do campo devem cumprir para que os registros que contêm os valores sejam incluídos nos resultados da consulta.
+                </p>
+           </div>
+        </div>
+
+        <div class="conteudo">
+            <h1 class="tema">SELECT * FROM Clientes WHERE Salario>1000 ORDER BY Nome ASC; </h1>
+            <div class="texto">
+                <p>
+                    Neste caso os registros serão ordenados de forma ascendente por nome<br /><br />
+                    Como usar a cláusula JOIN na linguagem SQL<br />
+                    Uma cláusula JOIN em SQL, correspondente a uma operação de junção em álgebra relacional, combina colunas de uma ou mais tabelas em um banco de dados relacional. Ela cria um conjunto que pode ser salvo como uma tabela ou usado da forma como está.
+                </p>
+            </div>
+            <div class="img2"> 
+                <img id="img_es1" src="SQLJoin.jpeg" alt="placas">
+            </div>
+
+            <br /><br />            
+            <h3>- INNER JOIN</h3>
+            <div class="texto">
+                <p>
+                    O Inner Join é o método de junção mais conhecido, ele  retorna os registros que são comuns às duas tabelas.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="Inner.jpeg" alt="placas">
+                <img id="img_vid" src="Inner2.jpeg" alt="placas">
+            </div> 
+
+            <br /><br />            
+            <h3>- LEFT JOIN</h3>
+            <div class="texto">
+                <p>
+                    O Left Join, cujo funcionamento tem como resultado todos os registros que estão na tabela A (mesmo que não estejam na tabela B) e os registros da tabela B que são comuns à tabela A.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="left.jpeg" alt="placas">
+            </div>  
+
+            <br /><br />            
+            <h3>- Right Join</h3>
+            <div class="texto">
+                <p>
+                    Usando o Right Join, teremos como resultado todos os registros que estão na tabela B (mesmo que não estejam na tabela A) e os registros da tabela A que são comuns à tabela B.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="right.jpeg" alt="placas">
+            </div>  
+
+            <br /><br />            
+            <h3>- Outer Join</h3>
+            <div class="texto">
+                <p>
+                    O Outer Join (também conhecido por Full Outer Join ou Full Join), têm como resultado todos os registros que estão na tabela A e todos os registros da tabela B.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="iimg_es1" src="Outer.jpeg" alt="placas">
+            </div>  
+
+            <br /><br />            
+            <h3>- Left Excluding Join</h3>
+            <div class="texto">
+                <p>
+                    Left Excluding Join, retorna como resultado todos os registros que estão na tabela A e que não estejam na tabela B.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="left2.jpeg" alt="placas">
+            </div>  
+
+            <br /><br />            
+            <h3>- Right Excluding Join</h3>
+            <div class="texto">
+                <p>
+                    O Right Excluding Join, retorna como resultado todos os registros que estão na tabela B e que não estejam na tabela A.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="Eight2.jpeg" alt="placas">
+            </div>  
+
+            <br /><br />            
+            <h3>- Outer Excluding Join </h3>
+            <div class="texto">
+                <p>
+                    Usando o Outer Excluding Join, teremos como resultado todos os registros que estão na tabela B, mas que não estejam na tabela A, e todos os registros que estão na tabela A, mas que não estejam na tabela B.
+                </p>
+           </div>
+           <div class="img2"> 
+                <img id="img_es1" src="Outer2.jpeg">
+            </div>  
+        </div>
+       
+        <div class="conteudo">
+            <h1 class="tema">Referências: </h1>
+            <a href="https://www.devmedia.com.br/introducao-ao-comando-select-da-sql/16528" id="link">Devmedia</a>
+            <a href="https://contembits.com.br/minicursos/mysql/Select-Where.aspx" id="link">Contembits</a>
+            <a href="https://consultabd.wordpress.com/2017/04/28/comando-top/" id="link">consultabd</a>
+            <a href="https://www.alura.com.br/artigos/join-em-sql#:~:text=Uma%20cl%C3%A1usula%20JOIN%20em%20SQL,um%20banco%20de%20dados%20relacional." id="link">alura</a>
+            <a href="https://www.devmedia.com.br/sql-join-entenda-como-funciona-o-retorno-dos-dados/31006" id="link">Devmedia</a>
+        </div>
+    </main>
+
     <footer>
         <div class="box">
             <a href="Index.html" id="link">Voltar para a página inicial</a>
